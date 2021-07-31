@@ -11,12 +11,14 @@ namespace AGLW_CSharp_CustomServerBasicSample
             server = new GameServer();
             server.Start();
 
+            // It might be looping forever.
+            // It's just a test for the build,
+            // we will terminate the GameLift fleet manually ourself.
+            // So nothing to worry here.
             while(server.IsAlive)
             {
 
             }
-
-            
         }
     }
 }
